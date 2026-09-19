@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: fb-page-automation
+    env: python
+    plan: free
+    region: singapore
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PAGE_ACCESS_TOKEN
+        sync: false
+      - key: VERIFY_TOKEN
+        value: raw_fabric_secret_token_786
+      - key: PAGE_ID
+        value: "1304777106056536"
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GOOGLE_SHEET_ID
+        value: 1m3BaNq8mWi0DmwbMHefJ_uPoPXWIlX9zxNQwxxSnf7k
+      - key: DEBUG
+        value: "false"

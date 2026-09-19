@@ -1,0 +1,703 @@
+[
+  {
+    "name": "Cotton T-Shirt",
+    "bn_name": "কটন টি-শার্ট",
+    "price": "450",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "টি-শার্ট",
+      "টিশার্ট",
+      "টি শার্ট",
+      "কটন টি-শার্ট",
+      "কটন টিশার্ট",
+      "tshirt",
+      "t-shirt",
+      "t shirt",
+      "cotton tshirt",
+      "cotton t-shirt"
+    ]
+  },
+  {
+    "name": "Slim Fit Denim Jeans",
+    "bn_name": "স্লিম ফিট ডেনিম জিন্স",
+    "price": "1850",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "জিন্স",
+      "জিন্স প্যান্ট",
+      "ডেনিম জিন্স",
+      "জিনস",
+      "jeans",
+      "denim",
+      "denim jeans",
+      "jeans pant"
+    ]
+  },
+  {
+    "name": "Formal Punjabi",
+    "bn_name": "ফরমাল পাঞ্জাবি",
+    "price": "2200",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "পাঞ্জাবি",
+      "পাঞ্জাবী",
+      "পান্জাবি",
+      "পান্জাবী",
+      "panjabi",
+      "punjabi",
+      "panjaby",
+      "punjaby",
+      "formal punjabi",
+      "formal panjabi"
+    ]
+  },
+  {
+    "name": "Leather Oxford Shoes",
+    "bn_name": "লেদার অক্সফোর্ড জুতা",
+    "price": "3500",
+    "available": false,
+    "stock": "আউট অব স্টক",
+    "aliases": [
+      "অক্সফোর্ড জুতা",
+      "অক্সফোর্ড শু",
+      "oxford shoes",
+      "oxford shoe",
+      "লেদার জুতা"
+    ]
+  },
+  {
+    "name": "Casual Polo Shirt",
+    "bn_name": "ক্যাজুয়াল পোলো শার্ট",
+    "price": "850",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "পোলো",
+      "পোলো শার্ট",
+      "polo",
+      "polo shirt",
+      "casual polo"
+    ]
+  },
+  {
+    "name": "Chino Pants",
+    "bn_name": "চিনো প্যান্ট",
+    "price": "1400",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "চিনো",
+      "চিনো প্যান্ট",
+      "চিনোস",
+      "chino",
+      "chino pant",
+      "chinos",
+      "pant",
+      "pants",
+      "প্যান্ট"
+    ]
+  },
+  {
+    "name": "Running Sneakers",
+    "bn_name": "রানিং স্নিকার্স",
+    "price": "2800",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "স্নিকার্স",
+      "স্নিকার",
+      "রানিং জুতা",
+      "sneakers",
+      "sneaker",
+      "running shoes"
+    ]
+  },
+  {
+    "name": "Silk Saree",
+    "bn_name": "সিল্ক শাড়ি",
+    "price": "4500",
+    "available": false,
+    "stock": "আউট অব স্টক",
+    "aliases": [
+      "শাড়ি",
+      "সিল্ক শাড়ি",
+      "শাড়ি",
+      "saree",
+      "sari",
+      "silk saree"
+    ]
+  },
+  {
+    "name": "Embroidered Kurti",
+    "bn_name": "এমব্রয়ডারি কুর্তি",
+    "price": "1600",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "কুর্তি",
+      "এমব্রয়ডারি কুর্তি",
+      "kurti",
+      "kurty"
+    ]
+  },
+  {
+    "name": "Canvas Slip-On Shoes",
+    "bn_name": "ক্যানভাস স্লিপ-অন জুতা",
+    "price": "1200",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "ক্যানভাস জুতা",
+      "স্লিপ-অন",
+      "slip-on",
+      "canvas shoes"
+    ]
+  },
+  {
+    "name": "Leather Wallet",
+    "bn_name": "লেদার ওয়ালেট / মানিব্যাগ",
+    "price": "750",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "লেদার ওয়ালেট",
+      "ওয়ালেট",
+      "ওয়ালেট",
+      "মানিব্যাগ",
+      "মানি ব্যাগ",
+      "manibag",
+      "wallet",
+      "money bag",
+      "leather wallet"
+    ]
+  },
+  {
+    "name": "Classic Wristwatch",
+    "bn_name": "ক্লাসিক রিস্টওয়াচ / হাতঘড়ি",
+    "price": "3200",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "হাতঘড়ি",
+      "হাত ঘড়ি",
+      "হাতঘড়ি",
+      "ঘড়ি",
+      "ঘড়ি",
+      "wristwatch",
+      "watch",
+      "ghori",
+      "wrist watch"
+    ]
+  },
+  {
+    "name": "Stainless Steel Water Bottle",
+    "bn_name": "স্টেইনলেস স্টিল ওয়াটার বোতল",
+    "price": "6500",
+    "available": false,
+    "stock": "আউট অব স্টক",
+    "aliases": [
+      "ওয়াটার বোতল",
+      "পানির বোতল",
+      "বোতল",
+      "water bottle",
+      "bottle"
+    ]
+  },
+  {
+    "name": "Wireless Bluetooth Earbuds",
+    "bn_name": "ওয়্যারলেস ব্লুটুথ ইয়ারবাডস",
+    "price": "2400",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "ইয়ারবাডস",
+      "ইয়ারবাড",
+      "earbuds",
+      "earbud",
+      "airpods",
+      "wireless earbuds"
+    ]
+  },
+  {
+    "name": "Smart Fitness Band",
+    "bn_name": "স্মার্ট ফিটনেস ব্যান্ড",
+    "price": "1950",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "ফিটনেস ব্যান্ড",
+      "স্মার্ট ব্যান্ড",
+      "fitness band",
+      "smart band"
+    ]
+  },
+  {
+    "name": "Formal Dress Shirt",
+    "bn_name": "ফরমাল ড্রেস শার্ট",
+    "price": "1350",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "ফরমাল শার্ট",
+      "ড্রেস শার্ট",
+      "formal shirt",
+      "dress shirt"
+    ]
+  },
+  {
+    "name": "Casual Hoodie",
+    "bn_name": "ক্যাজুয়াল হুডি",
+    "price": "1750",
+    "available": false,
+    "stock": "আউট অব স্টক",
+    "aliases": [
+      "হুডি",
+      "hoodie",
+      "hoody"
+    ]
+  },
+  {
+    "name": "Winter Jacket",
+    "bn_name": "উইন্টার জ্যাকেট",
+    "price": "3800",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "উইন্টার জ্যাকেট",
+      "শীতের জ্যাকেট",
+      "winter jacket"
+    ]
+  },
+  {
+    "name": "Sports Jogger Pants",
+    "bn_name": "স্পোর্টস জগার প্যান্ট",
+    "price": "1100",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "জগার",
+      "জগার প্যান্ট",
+      "jogger",
+      "joggers",
+      "jogger pant"
+    ]
+  },
+  {
+    "name": "Loafers",
+    "bn_name": "লোফার্স জুতা",
+    "price": "2600",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "লোফার",
+      "লোফার্স",
+      "loafers",
+      "loafer"
+    ]
+  },
+  {
+    "name": "Leather Belt",
+    "bn_name": "লেদার বেল্ট",
+    "price": "550",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "লেদার বেল্ট",
+      "বেল্ট",
+      "belt",
+      "leather belt"
+    ]
+  },
+  {
+    "name": "Backpack",
+    "bn_name": "ব্যাকপ্যাক / ব্যাগ",
+    "price": "2100",
+    "available": false,
+    "stock": "আউট অব স্টক",
+    "aliases": [
+      "ব্যাকপ্যাক",
+      "ব্যাগ",
+      "backpack",
+      "bag",
+      "school bag"
+    ]
+  },
+  {
+    "name": "Aviator Sunglasses",
+    "bn_name": "এভিয়েটর সানগ্লাস",
+    "price": "890",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "সানগ্লাস",
+      "রোদচশমা",
+      "চশমা",
+      "sunglasses",
+      "sunglass",
+      "glasses"
+    ]
+  },
+  {
+    "name": "Ceramic Coffee Mug",
+    "bn_name": "সিরামিক কফি মগ",
+    "price": "320",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "কফি মগ",
+      "মগ",
+      "coffee mug",
+      "mug"
+    ]
+  },
+  {
+    "name": "Electric Kettle",
+    "bn_name": "ইলেকট্রিক কেটলি",
+    "price": "1850",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "ইলেকট্রিক কেটলি",
+      "কেটলি",
+      "electric kettle",
+      "kettle"
+    ]
+  },
+  {
+    "name": "Desk Lamp LED",
+    "bn_name": "ডেস্ক ল্যাম্প এলইডি",
+    "price": "1250",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "ডেস্ক ল্যাম্প",
+      "টেবিল ল্যাম্প",
+      "desk lamp",
+      "table lamp"
+    ]
+  },
+  {
+    "name": "Bluetooth Speaker",
+    "bn_name": "ব্লুটুথ স্পিকার",
+    "price": "2900",
+    "available": false,
+    "stock": "আউট অব স্টক",
+    "aliases": [
+      "ব্লুটুথ স্পিকার",
+      "স্পিকার",
+      "speaker",
+      "bluetooth speaker"
+    ]
+  },
+  {
+    "name": "USB-C Fast Charger",
+    "bn_name": "ইউএসবি-সি ফাস্ট চার্জার",
+    "price": "750",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "চার্জার",
+      "ফাস্ট চার্জার",
+      "charger",
+      "fast charger",
+      "type c charger",
+      "usb-c"
+    ]
+  },
+  {
+    "name": "Mechanical Keyboard",
+    "bn_name": "মেকানিক্যাল কিবোর্ড",
+    "price": "4200",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "কিবোর্ড",
+      "মেকানিক্যাল কিবোর্ড",
+      "keyboard",
+      "mechanical keyboard"
+    ]
+  },
+  {
+    "name": "Ergonomic Wireless Mouse",
+    "bn_name": "এরগোনোমিক ওয়্যারলেস মাউস",
+    "price": "1450",
+    "available": false,
+    "stock": "আউট অব স্টক",
+    "aliases": [
+      "মাউস",
+      "ওয়্যারলেস মাউস",
+      "mouse",
+      "wireless mouse"
+    ]
+  },
+  {
+    "name": "Laptop Sleeve",
+    "bn_name": "ল্যাপটপ স্লিভ / কভার",
+    "price": "950",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "ল্যাপটপ স্লিভ",
+      "ল্যাপটপ ব্যাগ",
+      "ল্যাপটপ কভার",
+      "laptop sleeve",
+      "laptop cover"
+    ]
+  },
+  {
+    "name": "Cotton Pajama Set",
+    "bn_name": "কটন পায়জামা সেট",
+    "price": "850",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "পায়জামা সেট",
+      "পাজামা সেট",
+      "কটন পায়জামা",
+      "pajama set",
+      "payjama"
+    ]
+  },
+  {
+    "name": "Denim Jacket",
+    "bn_name": "ডেনিম জ্যাকেট",
+    "price": "2750",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "ডেনিম জ্যাকেট",
+      "denim jacket"
+    ]
+  },
+  {
+    "name": "Sandalwood Scented Candle",
+    "bn_name": "স্যান্ডালউড সুগন্ধি মোমবাতি",
+    "price": "450",
+    "available": false,
+    "stock": "আউট অব স্টক",
+    "aliases": [
+      "সুগন্ধি মোমবাতি",
+      "মোমবাতি",
+      "scented candle",
+      "candle"
+    ]
+  },
+  {
+    "name": "Non-Stick Frying Pan",
+    "bn_name": "নন-স্টিক ফ্রাইং প্যান",
+    "price": "1650",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "ফ্রাইং প্যান",
+      "কড়াই",
+      "frying pan",
+      "pan"
+    ]
+  },
+  {
+    "name": "Portable Power Bank 20000mAh",
+    "bn_name": "পাওয়ার ব্যাংক ২০০০০ এমএএইচ",
+    "price": "2300",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "পাওয়ার ব্যাংক",
+      "পাওয়ার ব্যাংক",
+      "power bank",
+      "powerbank"
+    ]
+  },
+  {
+    "name": "Over-Ear Headphones",
+    "bn_name": "ওভার-ইয়ার হেডফোন",
+    "price": "3600",
+    "available": false,
+    "stock": "আউট অব স্টক",
+    "aliases": [
+      "হেডফোন",
+      "ওভার-ইয়ার হেডফোন",
+      "headphones",
+      "headphone"
+    ]
+  },
+  {
+    "name": "Linen Casual Shirt",
+    "bn_name": "লিনেন ক্যাজুয়াল শার্ট",
+    "price": "1550",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "লিনেন শার্ট",
+      "লিনেন ক্যাজুয়াল",
+      "linen shirt",
+      "linen"
+    ]
+  },
+  {
+    "name": "Leather Formal Belt",
+    "bn_name": "লেদার ফরমাল বেল্ট",
+    "price": "680",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "ফরমাল বেল্ট",
+      "formal belt"
+    ]
+  },
+  {
+    "name": "Sports Duffel Bag",
+    "bn_name": "স্পোর্টস ডাফেল ব্যাগ",
+    "price": "1650",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "ডাফেল ব্যাগ",
+      "duffel bag",
+      "sports bag"
+    ]
+  },
+  {
+    "name": "Bath Towel Set",
+    "bn_name": "বাথ টাওয়াল সেট / তোয়ালে",
+    "price": "950",
+    "available": false,
+    "stock": "আউট অব স্টক",
+    "aliases": [
+      "তোয়ালে",
+      "গামছা",
+      "বাথ টাওয়াল",
+      "towel",
+      "bath towel"
+    ]
+  },
+  {
+    "name": "Stainless Steel Cutlery Set",
+    "bn_name": "স্টেইনলেস স্টিল কাটলারি সেট / চামচ",
+    "price": "1200",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "কাটলারি সেট",
+      "চামচ",
+      "cutlery set",
+      "spoon set"
+    ]
+  },
+  {
+    "name": "Travel Neck Pillow",
+    "bn_name": "ট্রাভেল নেক পিলো / বালিশ",
+    "price": "550",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "নেক পিলো",
+      "বালিশ",
+      "ট্রাভেল পিলো",
+      "neck pillow",
+      "travel pillow"
+    ]
+  },
+  {
+    "name": "Graphic Print T-Shirt",
+    "bn_name": "গ্রাফিক প্রিন্ট টি-শার্ট",
+    "price": "500",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "গ্রাফিক টি-শার্ট",
+      "গ্রাফিক টিশার্ট",
+      "প্রিন্ট টি-শার্ট",
+      "graphic tshirt",
+      "print tshirt",
+      "graphic t-shirt",
+      "print t-shirt"
+    ]
+  },
+  {
+    "name": "Semi-Formal Blazer",
+    "bn_name": "সেমি-ফরমাল ব্লেজার",
+    "price": "5200",
+    "available": false,
+    "stock": "আউট অব স্টক",
+    "aliases": [
+      "ব্লেজার",
+      "blazer",
+      "semi formal blazer"
+    ]
+  },
+  {
+    "name": "Leather Chelsea Boots",
+    "bn_name": "লেদার চেলসি বুট জুতা",
+    "price": "4100",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "চেলসি বুট",
+      "বুট জুতা",
+      "বুট",
+      "chelsea boots",
+      "boots",
+      "boot"
+    ]
+  },
+  {
+    "name": "Premium Pajama Pants",
+    "bn_name": "প্রিমিয়াম পায়জামা প্যান্ট",
+    "price": "750",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "পায়জামা প্যান্ট",
+      "পাজামা",
+      "প্রিমিয়াম পায়জামা",
+      "pajama pants"
+    ]
+  },
+  {
+    "name": "Smart LED Bulb",
+    "bn_name": "স্মার্ট এলইডি বাল্ব",
+    "price": "620",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "স্মার্ট বাল্ব",
+      "এলইডি বাল্ব",
+      "বাল্ব",
+      "smart bulb",
+      "led bulb",
+      "bulb"
+    ]
+  },
+  {
+    "name": "Insulated Travel Tumbler",
+    "bn_name": "ইনসুলেটেড ট্রাভেল ফ্লাস্ক / টাম্বলার",
+    "price": "850",
+    "available": true,
+    "stock": "ইন স্টক",
+    "aliases": [
+      "ট্রাভেল ফ্লাস্ক",
+      "ফ্লাস্ক",
+      "টাম্বলার",
+      "tumbler",
+      "travel tumbler",
+      "flask"
+    ]
+  },
+  {
+    "name": "Noise-Cancelling Earplugs",
+    "bn_name": "নয়েজ ক্যান্সেলিং ইয়ারপ্লাগ",
+    "price": "390",
+    "available": false,
+    "stock": "আউট অব স্টক",
+    "aliases": [
+      "ইয়ারপ্লাগ",
+      "কান বন্ধ করার প্লাগ",
+      "earplugs",
+      "earplug"
+    ]
+  }
+]
