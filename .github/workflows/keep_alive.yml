@@ -12,10 +12,6 @@ jobs:
     steps:
       - name: Ping Bot Health Endpoint
         run: |
-          URL="${{ secrets.RENDER_BOT_URL }}"
-          if [ -z "$URL" ]; then
-            echo "RENDER_BOT_URL secret is not set yet. Please set it in repository secrets."
-          else
-            echo "Pinging $URL/health ..."
-            curl -s -f "$URL/health" || echo "Ping failed or server waking up"
-          fi
+          URL="https://fb-page-automation-n1qp.onrender.com"
+          echo "Pinging $URL/health ..."
+          curl -s -f "$URL/health" || echo "Ping failed or server waking up"
