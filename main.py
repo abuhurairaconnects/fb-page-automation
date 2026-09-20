@@ -45,6 +45,43 @@ async def root():
         "products_count": len(sheets_service.get_products())
     }
 
+@app.get("/privacy-policy")
+async def privacy_policy():
+    html_content = """
+    <!DOCTYPE html>
+    <html>
+    <head><title>Privacy Policy - Raw Fabric Automation</title></head>
+    <body style="font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6;">
+        <h2>Privacy Policy for Raw Fabric Automation</h2>
+        <p>Last updated: September 2026</p>
+        <p>Raw Fabric Automation ("we", "our") provides automated Facebook messaging and order processing services for our Facebook Page "Raw Fabric".</p>
+        <h3>1. Information We Collect</h3>
+        <p>We only collect information voluntarily provided by customers via Facebook Messenger or comments, specifically: Name, Delivery Address, and Phone Number for order fulfillment purposes.</p>
+        <h3>2. How We Use Information</h3>
+        <p>The information is used strictly to process Cash on Delivery (COD) orders and communicate order status to customers.</p>
+        <h3>3. Data Protection</h3>
+        <p>We do not sell, rent, or share personal information with third parties. Data is securely processed and stored for business management.</p>
+        <h3>4. Contact Us</h3>
+        <p>For any questions or data deletion requests, contact us directly via our Facebook Page "Raw Fabric".</p>
+    </body>
+    </html>
+    """
+    return HTMLResponse(content=html_content, status_code=200)
+
+@app.get("/terms")
+async def terms_of_service():
+    html_content = """
+    <!DOCTYPE html>
+    <html>
+    <head><title>Terms of Service - Raw Fabric Automation</title></head>
+    <body style="font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6;">
+        <h2>Terms of Service</h2>
+        <p>By interacting with Raw Fabric Facebook Page or chatbot, you agree to these Terms of Service for product inquiries and Cash on Delivery order processing.</p>
+    </body>
+    </html>
+    """
+    return HTMLResponse(content=html_content, status_code=200)
+
 @app.get("/health")
 async def health_check():
     tok = settings.PAGE_ACCESS_TOKEN or ""
