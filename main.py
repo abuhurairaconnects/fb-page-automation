@@ -8,11 +8,27 @@ from services.sheets_service import sheets_service
 from services.ai_service import ai_service
 
 # Logging configuration
+recent_logs = []
+
+class MemoryLogHandler(logging.Handler):
+    def emit(self, record):
+        try:
+            msg = self.format(record)
+            recent_logs.append(msg)
+            if len(recent_logs) > 100:
+                recent_logs.pop(0)
+        except Exception:
+            pass
+
+memory_handler = MemoryLogHandler()
+memory_handler.setFormatter(logging.Formatter("%(asctime)s [%(levelname)s] %(name)s: %(message)s"))
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(name)s: %(message)s"
 )
 logger = logging.getLogger("FBAutomation")
+logging.getLogger().addHandler(memory_handler)
 
 app = FastAPI(
     title="Facebook Page AI Automation Bot",
@@ -31,12 +47,19 @@ async def root():
 
 @app.get("/health")
 async def health_check():
+    tok = settings.PAGE_ACCESS_TOKEN or ""
+    tok_preview = f"{tok[:10]}...{tok[-6:]}" if len(tok) > 20 else "not_set"
     return {
         "status": "healthy",
         "google_sheet_connected": len(sheets_service.get_products()) > 0,
         "facebook_token_set": settings.PAGE_ACCESS_TOKEN != "placeholder_token",
+        "token_preview": tok_preview,
         "gemini_api_key_set": settings.GEMINI_API_KEY is not None
     }
+
+@app.get("/logs")
+async def get_recent_logs():
+    return {"count": len(recent_logs), "logs": recent_logs[-50:]}
 
 @app.get("/webhook")
 async def verify_webhook(request: Request):
@@ -98,14 +121,17 @@ async def process_comment_event(change_value: dict):
 
     # 1. Analyze with AI
     public_reply, send_inbox, inbox_message = await ai_service.analyze_and_reply_comment(comment_text)
+    logger.info(f"[Comment AI Analysis] public_reply='{public_reply}' | send_inbox={send_inbox}")
 
     # 2. Reply publicly to comment
     if public_reply:
-        await facebook_service.reply_to_comment(comment_id, public_reply)
+        pub_res = await facebook_service.reply_to_comment(comment_id, public_reply)
+        logger.info(f"[Public Reply Result for {comment_id}]: {pub_res}")
 
     # 3. Send private reply into user's Messenger inbox if requested
     if send_inbox and inbox_message:
-        await facebook_service.send_private_reply(comment_id, inbox_message)
+        priv_res = await facebook_service.send_private_reply(comment_id, inbox_message)
+        logger.info(f"[Private Reply Result for {comment_id}]: {priv_res}")
 
 
 @app.post("/webhook")
@@ -120,6 +146,7 @@ async def webhook_handler(request: Request, background_tasks: BackgroundTasks):
         return Response(content="INVALID_JSON", status_code=400)
 
     object_type = data.get("object")
+    logger.info(f"[Webhook POST] object={object_type} | entries={len(data.get('entry', []))}")
 
     # 1. Page events (Messages or Feed/Comments)
     if object_type == "page":
@@ -168,8 +195,10 @@ async def webhook_handler(request: Request, background_tasks: BackgroundTasks):
             if "changes" in entry:
                 for change in entry["changes"]:
                     field = change.get("field")
+                    logger.info(f"[Webhook Change] field={field}")
                     if field == "feed":
                         value = change.get("value", {})
+                        logger.info(f"[Feed Value] item={value.get('item')}, verb={value.get('verb')}, from={value.get('from', {}).get('name')}")
                         background_tasks.add_task(process_comment_event, value)
 
         return Response(content="EVENT_RECEIVED", status_code=200)
